@@ -4,43 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../public/css/styles.css" rel="stylesheet">
+    <link href="../public/css/styles-1.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0fce3c0945.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title> ML </title>
 </head>
 
 <body>
-    <header>
-        <div><img height="100" width="300" src="../public/images/logo-mercado-liebre.svg" alt="Imagen de ML"></div>
-    
-        <!-- <div>Lugar para poner barra de busqueda</div> -->
-        <form method="get" action="#">
-            <input type="search" name="q" placeholder="Buscar productos, marcas y mas"><br>
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-        
-            <p id="compra"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+    <header class="main-header">
+        <div class="main-header-top-bar">
 
-        <nav>
-            <ul>
-                <li><a href="">Ofertas</a></li>
-                <li><a href="">Tiendas Oficiales</a></li>
-                <li><a href="">Vender</a></li>
-                <li><a href="">Ayuda</a></li>
+            <nav class="main-header-search-bar">
+                <img src="../public/images/logo-mercado-liebre.svg" alt="Imagen de ML" class="logo">
+
+                <form method="get" action="#">
+                    <input type="search" name="q" placeholder="Buscar productos, marcas y mas">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </nav>
                 
-                <br>
-        
-                <li><a href="">Crea tu cuenta</a><i class="fa-solid fa-id-card"></i></li>
-                <li><a href="">Ingresa</a><i class="fa-solid fa-right-to-bracket"></i></li>
-                <li><a href="">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
-            </ul>
-        </nav>
-
-        <div class="burger-menu" id="burger">
-            <i class="fas fa-bars"></i>
+            <h2 class="compra">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
         </div>
 
-        <br>
+        <a href="#" class="burger-menu"><i class="fas fa-bars"></i></a>
+
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+
+            <ul class="right-navbar">
+                <li><a href="#"><i class="fa-solid fa-id-card"></i>Crea tu cuenta</a></li>
+                <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i>Ingresa</a></li>
+                <li><a href="#"><i class="fa-solid fa-basket-shopping"></i>Mis compras</a></li>
+            </ul>
+        </nav>
     </header>
 
 
